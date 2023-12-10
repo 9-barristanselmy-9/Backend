@@ -24,4 +24,4 @@ const pecheurSchema = new Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose("Pecheur", pecheurSchema);
+module.exports = mongoose.model("Pecheur", pecheurSchema);
