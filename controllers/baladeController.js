@@ -2,7 +2,7 @@ const Balade = require("../models/baladeModel");
 
 const mongoose = require("mongoose");
 
-//Get all balade
+//Get all balades
 
 const getBalades = async (req, res) => {
   const balades = await Balade.find({}).sort({ createdAt: -1 });
