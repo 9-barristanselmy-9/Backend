@@ -48,7 +48,7 @@ const deleteBateau = async (req, res) => {
 };
 
 // update a bateau
-const updateBateau = async (req, res) => {
+const updateBateau =  async (req, res) => {
     const { id } = req.params;
 
     if (!mongoose.Types.ObjectId.isValid(id)) {
