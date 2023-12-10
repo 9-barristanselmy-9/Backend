@@ -20,5 +20,6 @@ router.post("/add", createPecheur);
 router.delete("/delete/:id", deletePecheur);
 //UPDATE A PECHEUR
 router.patch("/update/:id", updatePecheur);
+
 module.exports = router;
 
