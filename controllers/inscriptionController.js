@@ -26,15 +26,15 @@ const getInscription = async (req, res) => {
 
 // Create new inscription
 const createInscription = async (req, res) => {
-    const { nom, prenom, email, telephone, nombrePersonnes } = req.body;
+    const { nom, prenom, email,  numTel, nbrPersonnes } = req.body;
 
     try {
         const inscription = await Inscription.create({
             nom,
             prenom,
             email,
-            telephone,
-            nombrePersonnes,
+            numTel,
+            nbrPersonnes,
         });
 
         res.status(200).json(inscription);
